@@ -1,1 +1,10 @@
-это мой конспект по python для детей! 
+это мой конспект по python https://couserhunter.net/course/python-polnoe-rukovodstvo
+Monty Python - comic show 
+основные операторы 
++
+-
+*
+/
+масивы 
+
+классы 
