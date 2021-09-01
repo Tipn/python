@@ -1,5 +1,7 @@
 это мой конспект по python https://couserhunter.net/course/python-polnoe-rukovodstvo
 Monty Python - comic show 
+https://pythoner.name/document/tutorial
+каждая строка это инструкция, не допускаются отступы для 
 основные операторы 
 +
 -
