@@ -30,7 +30,7 @@ print (s[0:5]) #Hello
 print (s[6:]) #world!
 print (s[::2]) #Hlowrd
 print (s[::-1]) #!dlrow olleH
-print (s[:5] + s[6:]) #!dlrow olleH
+print (s[:5] + s[6:]) #Helloworld!
 # print (s[::-1]) #!dlrow olleH
 
 
