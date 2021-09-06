@@ -4,11 +4,11 @@
 
 # == #
 
-print (2 > 3) # False
-print (2 < 3) # True
-print (3 == 3) # True
+# print (2 > 3) # False
+# print (2 < 3) # True
+# print (3 == 3) # True
 
-print (3 == 3) # True
+# print (3 == 3) # True
 '''
 if выражение1:
     блок кода1
@@ -17,3 +17,22 @@ elif выражение 2:
 else:
     блок кода 3
 '''
+
+x = 0
+if x :
+    print ('переменная х вернула ИСТИНУ')
+
+else:
+    print ('Переменная х вернула ЛОЖЬ')
+
+light ='red'
+
+if light == 'red':
+    print ('stop')
+elif light ==('yellow'):
+    print ('wait')
+elif light ==('green'):
+    print ('Go!')
+else:
+    print ('What?')
+    
