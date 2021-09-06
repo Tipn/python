@@ -56,3 +56,17 @@ if time >= 8 and day != 'su' :  # каждое условие должно ве�
     print ('Open')
 else:
     print('Close') 
+
+
+x=0
+if not x:
+    print ('ok')
+else:
+    print('NO')
+
+
+
+x = 1
+
+res = 'OK' if x else 'NO'
+print (res)
