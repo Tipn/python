@@ -37,8 +37,9 @@ else:
 #     print ('What?')
 
 age = int(input('сколько вам лет?'))
-
+x = 18 - age
 if age >=18:
     prnt('Добро пожаловать')
 else:
-    print ('вам еще рано')
+    print ('вам еще рано, вам осталось')
+    print (x)
