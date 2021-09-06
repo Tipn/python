@@ -18,21 +18,27 @@ else:
     блок кода 3
 '''
 
-x = 0
-if x :
-    print ('переменная х вернула ИСТИНУ')
+# x = 0
+# if x :
+#     print ('переменная х вернула ИСТИНУ')
 
+# else:
+#     print ('Переменная х вернула ЛОЖЬ')
+
+# light ='red'
+
+# if light == 'red':
+#     print ('stop')
+# elif light ==('yellow'):
+#     print ('wait')
+# elif light ==('green'):
+#     print ('Go!')
+# else:
+#     print ('What?')
+
+age = int(input('сколько вам лет?'))
+
+if age >=18:
+    prnt('Добро пожаловать')
 else:
-    print ('Переменная х вернула ЛОЖЬ')
-
-light ='red'
-
-if light == 'red':
-    print ('stop')
-elif light ==('yellow'):
-    print ('wait')
-elif light ==('green'):
-    print ('Go!')
-else:
-    print ('What?')
-    
+    print ('вам еще рано')
