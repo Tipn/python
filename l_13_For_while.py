@@ -15,6 +15,8 @@
 
 s= 'Hellow world'
 for l in s:   # для каждой буквы в строке s
-    print (l, end=' ')  # H e l l o w   w o r l d 
+    if l == ' ':
+        continue
+    print (f'"{l}"', end=' ')  # H e l l o w   w o r l d 
 
     
