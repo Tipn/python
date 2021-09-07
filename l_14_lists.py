@@ -10,6 +10,6 @@ l5 = [i for i in 'hello world' if i != ' '] # без пробелов
 l6 = [i for i in 'hello world' if i != ' ' and i !='e'] # без пробелов и без е
 l7 = [i for i in 'hello world' if i not in ['a', 'e', 'i', 'u', 'o', ' ']] # без пробелов и без глассных
 
-
-
 print (l, l2, l3, l4, l7, sep='\n' )
+
+print (list(range(1,11,2)))
