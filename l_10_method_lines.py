@@ -2,15 +2,22 @@
 
 # len(S) 
 s='hello world!!'
-# print (len(s)) #5
-# s2=s.capitalize()
+# print (len(s)) # выводит количество символов в строке 
+# s2=s.capitalize() - переводит первый символ стоки в верхний регистр, все остальные в нижний 
 # print (s, s2)   #hello Hello
-# print(s.center(20, '!')) #!!!!!!!hello!!!!!!!!
-# print (s.count('l')) #2
-# print(s.find('1')) #
-# print(s.index('l')) #2
+# print(s.center(20, '!')) #!!!!!!!hello!!!!!!!! возвращает отцентрованую строку по краям которой стоит символ
+# print (s.count('l')) #возвращает количество непересекающихся вхождений подстроки в диапазоне [начало конец]
+# print(s.find('1')) # поиск подстрокив строке. возвращает номер первого вхождения 
+# print(s.index('l')) #2 оиск подстрокив строке. возвращает номер первого вхождения или вызывает ValueError
 # print(s.find('w')) #6
-# print(s.replace('h', 't')) #tello world!!
-print(s.split())
+# print(s.replace('h', 't')) #tello world!! #шаблон замена шаблона 
+# print(s.split()) #['hello', 'world!!'] # разбиение строки по разделителю 
+
+# # print(s.idigit()) # получим false потому что нет цыфр
+# str.isdigit() -состоит из цифр
+# str.isalpha() -состоит из букв
+# str.isalnum() - из цифр или букв
+# str.islower() - из символов в нижнем регистре 
+# str.isupper() - из символов в верхнем регистре 
 
 
