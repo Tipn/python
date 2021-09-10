@@ -5,5 +5,18 @@
 words = ['мадам', 'топот', 'test', 'madam', 'word']
 my_str = ['око за око', 'а роза упала на лапу азора', 'около маши молоко', '', ]
 
-l1 = [i for i in words if i != 'test' and != 'word']
-print (l1)
+# palindroms = []
+# for word in words:
+#     if word == word[::-1]:
+#         palindroms.append(word)
+# print (palindroms)
+# ************************
+
+palindroms =[word for word  ]
+
+
+    # word[::-1] # перевернуть слово 
+
+
+# l1 = [i for i in words if i != 'test' and != 'word']
+# print (l1)
