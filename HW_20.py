@@ -5,14 +5,15 @@
 words = ['мадам', 'топот', 'test', 'madam', 'word']
 my_str = ['око за око', 'а роза упала на лапу азора', 'около маши молоко', '', ]
 
-# palindroms = []
-# for word in words:
-#     if word == word[::-1]:
-#         palindroms.append(word)
-# print (palindroms)
-# ************************
+palindroms = []
+for word in words:
+    if word == word[::-1]:
+        palindroms.append(word)
+print (palindroms)
+************************
 
-palindroms =[word for word  ]
+palindroms =[word for word in words if word == word[::-1]] # добавь в список word из word которое берется из words
+print (palindroms)
 
 
     # word[::-1] # перевернуть слово 
