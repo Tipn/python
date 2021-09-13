@@ -14,4 +14,11 @@ print (s3)
 print (s4)
 print (type(s6))
 
- 
+nums = [1,2,3,4,5,6,4,3,2,2]
+nums2 = list(set(nums)) # переводим nums в множество и еомандой  list упорядычеваем 
+print (nums2) 
+
+a = set('abracadabra') #{'b', 'c', 'd', 'r', 'a'}
+b = set('alacazam')     #{'m', 'c', 'a', 'z', 'l'}
+
+print(a, b, sep='\n') # напечатай 2 множества  и раздели их переносом на следующую строку
