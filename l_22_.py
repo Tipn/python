@@ -44,3 +44,6 @@ print(a, b, c, d, e, f, sep='\n') # напечатай 2 множества  и 
 
 x = frozenset('hello') # frozenset({'o', 'e', 'l', 'h'}) добавить или удалить ничего нельзя 
 print(x)
+
+for i in f:  # перебрать все элементы множества f 
+    print(i)
