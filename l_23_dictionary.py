@@ -34,6 +34,15 @@ for key in product1:
                                         # price: 1000
 # print (product1.items()) # dict_items([('title', 'Sony'), ('price', 1000)])
 for key, Value in product1.items() : # данный метод возвращает пары ключ значение
-    print(key, Value) # выводит тоже самое значение 
+    print(key, Value) # выводит тоже самое значение
 
+products = [
+    {'title': 'Panas', 'price': 222},
+    {'title': 'Samsung', 'price': 333},
+    {'title': 'aviv', 'price': 444},
+] 
+# print(products)
+
+for x in products: 
+    print(x['title'], x['price'])
   
