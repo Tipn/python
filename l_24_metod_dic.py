@@ -15,6 +15,11 @@
 # dict.values()   -возвращает значение в словаре 
 
 product1 = {'titel': 'Sony', 'price': '111'}
-print (product1.items())    #dict_items([('titel', 'Sony'), ('price', '111')])
-print (product1.keys())     #dict_keys(['titel', 'price'])
-print (product1.pop('titel'))     #Sony
+
+# print (product1.items())    #dict_items([('titel', 'Sony'), ('price', '111')])
+# print (product1.keys())     #dict_keys(['titel', 'price'])
+# print (product1.pop('titel'))     #Sonyесли будет ошибка пр не существующем "titel" 
+
+print (product1)
+print (product1.setdefault('titel2', 'test')) 
+print (product1)
