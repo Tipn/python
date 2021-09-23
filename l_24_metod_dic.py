@@ -21,6 +21,7 @@ product1 = {'titel': 'Sony', 'price': '111'}
 
 print (product1)
 # print (product1.setdefault('titel2', 'test')) 
-product1.update ({'test': 'value'})
+product1.update ({'test': 'value'})     #{'titel': 'Sony', 'price': '111', 'test': 'value'}
+product1.update ({'price': '200'})      #{'titel': 'Sony', 'price': '200', 'test': 'value'}
 print (product1)
-
+print (product1.values())               #{'titel': 'Sony', 'price': '200', 'test': 'value'}
