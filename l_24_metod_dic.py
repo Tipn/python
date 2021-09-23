@@ -21,6 +21,6 @@ product1 = {'titel': 'Sony', 'price': '111'}
 
 print (product1)
 # print (product1.setdefault('titel2', 'test')) 
-product1.update{('test': 'value')}
+product1.update ({'test': 'value'})
 print (product1)
 
