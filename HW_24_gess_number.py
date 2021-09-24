@@ -6,4 +6,20 @@
 
 
 print('Добро пожаловать в иру угадай число, введите число от 1 до 100')
-x = ()
+x = 75
+cnt = 0
+user_num = 0
+
+while True:
+    user_num = input('Угадайте заданное число от 1 до 100 - угодай его:')
+    cnt += 1 # cnt = cnt + 1
+    if user_num == x:
+        print(f'ты угадал число за (cnt) попыток')
+        print('Спасибо за игру')
+        break
+    elif user_num > x:
+        print('мое число меньше')
+    else user_num < x:
+
+        
+# print('')
