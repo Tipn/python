@@ -24,12 +24,21 @@ from typing import get_type_hints
 
 
 def get_sum(a, b):
-    print(a + b)
+    return(a + b)   # хорошей практикой возвращать результат, а не печатать 
 
 # x= 2
 # y= 5
 # get_sum(1, 3)
 # get_sum(x, y)
 
-res = len('Hello') # возвращает результат, количество символов в тексте
-print (res)
+# res = len('Hello') # возвращает результат, количество символов в тексте
+# print (res)
+
+print (get_sum(1, 2))
+
+
+def hi():
+    print ('HI')
+
+hi()        # Правильный вызов функцции 
+print(hi()) # неявно возвращает нон
