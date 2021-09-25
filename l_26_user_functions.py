@@ -11,11 +11,22 @@
 # else:
 #     s2 = s2.lower()
 # print(s2)
-def hello():   # defing oпределять 
-    print ('Hello')
-hello()
+# def hello():   # defing oпределять 
+#     print ('Hello')
+# hello()
 
-def hello(name, word):   # defing oпределять 
-    print ('Hello, ' + name + '. Say' + word)
-hello('Jhon', 'hi')
-hello('Kety', 'Hello')
+# def hello(name, word):   # defing oпределять 
+#     print ('Hello, ' + name + '. Say' + word)
+# hello('Jhon', 'hi')
+# hello('Kety', 'Hello')
+
+from typing import get_type_hints
+
+
+def get_sum(a, b):
+    print(a + b)
+
+x= 2
+y= 5
+get_sum(1, 3)
+get_sum(x, y)
