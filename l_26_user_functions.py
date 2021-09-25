@@ -13,5 +13,9 @@
 # print(s2)
 def hello():   # defing oпределять 
     print ('Hello')
-
 hello()
+
+def hello(name, word):   # defing oпределять 
+    print ('Hello, ' + name + '. Say' + word)
+hello('Jhon', 'hi')
+hello('Kety', 'Hello')
