@@ -26,7 +26,10 @@ from typing import get_type_hints
 def get_sum(a, b):
     print(a + b)
 
-x= 2
-y= 5
-get_sum(1, 3)
-get_sum(x, y)
+# x= 2
+# y= 5
+# get_sum(1, 3)
+# get_sum(x, y)
+
+res = len('Hello') # возвращает результат, количество символов в тексте
+print (res)
