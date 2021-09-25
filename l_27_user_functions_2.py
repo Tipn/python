@@ -17,3 +17,26 @@ print(get_sum(5, 2)) # поскольку именнованые уже зада
 
 
 print('hello', end='', sep='') # именнованые аргументы должны следовать после позицыонных 
+
+#
+#переменное количество аргументов
+
+def get_sum(*args, **kwards): #аргументы и ключивые слова
+    print(args)
+
+get_sum(1, 5, 10, 5)
+
+print(sum([1,2,3,7])) # 
+
+def func(**x):
+    print(x)
+func(a=1, b=5, c= 20) #{'a': 1, 'b': 5, 'c': 20}
+
+def f(a, x, *args, **kwords):
+    print(a)
+    print(x)
+    print(args)
+    print(kwords)
+
+f(1, 2, 3, 4, b='test', c='hi')
+
