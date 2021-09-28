@@ -46,7 +46,15 @@ print(f3(l))
 
 def f4(l):                  #
     def get_mult(x):        # для каждого элемента вызывается ф. 
-        return x * 2        # и умножается на 2, но тут можно выполнять много действий
+        return int(x) * 2        # и умножается на 2, но тут можно выполнять много действий например вернуть х к числу
     return [get_mult(i) for i in l] # написать 10 строк кода в функции и вернуть
 
 print(f4(l))                # 
+
+def f5(l):                  #
+    def get_mult(x):        # 
+        if isinstance(x, int): #
+            return x * 2        # 
+    return [get_mult(i) for i in l if get_mult(i)] # для каждого i в списке l сделай операцию ф. если в ф. есть значение 
+
+print(f5(l))            
