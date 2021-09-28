@@ -42,14 +42,14 @@ l = [1, '2', 3]               # список элементов
 def f3(l):                  # возвращает новый список где каждый элемент * 2
     return [i * 2 for i in l]
 
-print(f3(l))
+print(f3(l))                #[2, '22', 6]
 
 def f4(l):                  #
     def get_mult(x):        # для каждого элемента вызывается ф. 
         return int(x) * 2        # и умножается на 2, но тут можно выполнять много действий например вернуть х к числу
     return [get_mult(i) for i in l] # написать 10 строк кода в функции и вернуть
 
-print(f4(l))                # 
+print(f4(l))                # [2, 4, 6]
 
 def f5(l):                  #
     def get_mult(x):        # 
@@ -57,4 +57,11 @@ def f5(l):                  #
             return x * 2        # 
     return [get_mult(i) for i in l if get_mult(i)] # для каждого i в списке l сделай операцию ф. если в ф. есть значение 
 
-print(f5(l))            
+print(f5(l))                # [2, 6]
+
+def f6(l):                  #
+    def get_mult(x):        # 
+        return x * 2        # 
+    return list(map(get_mult, l))#  тотже вывод но при другой функции
+
+print(f6(l))               #[2, '22', 6]
