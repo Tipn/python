@@ -6,6 +6,8 @@
 
 # переписать игру угадай число, с модулем rendom. 
 
-import os, rendom
+import os, random
 
 print(os.getcwd())
+print(random.randint(1, 100)) # генерируем случайное число 
+
