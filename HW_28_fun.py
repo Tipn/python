@@ -20,10 +20,14 @@ range
 """
 
 def find_sum(n):
-    pass
+    res = 0 
+    for i in range(n+1):
+        if i % 3 == 0 or i % 5 == 0: # деление без остатка 
+            res += i
+    return res
 
-find_sum(5) # return 8 (3 + 5)
-find_sum(10) # return 33 (3 + 5 + 6 + 9 + 10)
+print(find_sum(5)) # return 8 (3 + 5)
+print(find_sum(10)) # return 33 (3 + 5 + 6 + 9 + 10)
 
 """
 3 Дан список имен. Выберете в новый список только те имена, которые состоят из 4-х букв.
