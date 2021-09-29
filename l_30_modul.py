@@ -3,3 +3,7 @@
 # их возможно импортировать или установить менеджер pip аналог composer 
 # https://docs.python.org/3/library
 # module OS 
+
+import os 
+
+print(os.getcwd())
