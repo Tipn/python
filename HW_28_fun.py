@@ -38,6 +38,8 @@ print(find_sum2(10)) # return 33 (3 + 5 + 6 + 9 + 10)
 3 Дан список имен. Выберете в новый список только те имена, которые состоят из 4-х букв.
 names - ["Ryan", "Kieran", "Mark", "John", "David", "Paul"] # ["Ryan", "Mark", "John", "Paul"]
 """
-
+names = ["Ryan", "Kieran", "Mark", "John", "David", "Paul"] # ["Ryan", "Mark", "John", "Paul"]
 def get_names(names):
-    pass
+    return [i for i in names if len(i) == 4]
+
+print(get_names(names))
