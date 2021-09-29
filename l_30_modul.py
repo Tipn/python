@@ -4,6 +4,8 @@
 # https://docs.python.org/3/library
 # module OS 
 
-import os 
+# переписать игру угадай число, с модулем rendom. 
+
+import os, rendom
 
 print(os.getcwd())
