@@ -11,5 +11,9 @@ def get_len(string):
         cnt += 1
     return cnt
 
-print(__name__)     # возвращает имя подключенной libs(текущего файла) тоесть libs_30
+if __name__ == '__main__':
+    print(__name__)
+
+# print(__name__)     # возвращает имя подключенной libs(текущего файла) тоесть libs_30
+print(__name__)
 print('Hello, I am libs.py') 

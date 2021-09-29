@@ -31,3 +31,6 @@ print(get_len('hello'))
 при выполнении модуля его код из libs копируется в файл где был вызван libs 
 
 """
+
+f = libs.get_count 
+print(f('hello', '1'))
