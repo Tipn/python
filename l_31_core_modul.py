@@ -1,5 +1,5 @@
 # datetime
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 import locale
 
 """
@@ -34,4 +34,13 @@ locale.setlocale(locale.LC_ALL, 'ru_RU') # переводит на нашу ге
 print (now.strftime('%a'))  # Thu
 print (now.strftime('%A'))  # Thursday четверг
 
-print(f'дата: {now.strftime("%A, %b, %d, %Y")}')
+print(f'дата: {now.strftime("%A, %b, %d, %Y")}')#дата: четверг, сен, 30, 2021
+print(f'время: {now.strftime("%H:%M:%S")}')#время: 17:43:57
+
+print(now.strftime('%c'))  # четверг, 30 сентября 2021 г. 17:51:19
+print(now.strftime('%x'))  # 30.09.2021
+print(now.strftime('%X'))  # 17:51:19
+
+print(now.strftime('%c')) #четверг, 30 сентября 2021 г. 17:51:19
+d1 = now + timedelta(days=1, hours=2, minutes=10) #пятница,  1 октября 2021 г. 20:00:21
+print(d1.strftime('%c'))
