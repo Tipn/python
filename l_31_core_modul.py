@@ -1,5 +1,7 @@
 # datetime
 from datetime import date, datetime
+import locale
+
 """
 # date
 today = date.today()
@@ -25,5 +27,11 @@ print(now.second) #50
 days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
 print(days[now.weekday()]) # чт
 """
+# strftime
+print(now)
+locale.setlocale(locale.LC_ALL, 'ru_RU') # переводит на нашу гео 
 
-strftime
+print (now.strftime('%a'))  # Thu
+print (now.strftime('%A'))  # Thursday четверг
+
+print(f'дата: {now.strftime("%A, %b, %d, %Y")}')
