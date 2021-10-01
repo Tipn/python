@@ -19,11 +19,24 @@ on
 из которого получают кортеджи для каждого каталога переданой файловой иерархии.
 """
 import os
-tree = os.walk('folder')
+"""
+tree = os.walk('folder') # возвращает кортеджи 
 for files in tree:
     print(files)    #('folder', ['subfolder2', 'subfolder1'], [])
                     # ('folder/subfolder2', ['subfolder2-1'], ['1.txt'])
                     # ('folder/subfolder2/subfolder2-1', [], ['4.txt'])
                     # ('folder/subfolder1', [], ['3.txt', '2.txt'])
+"""
 
-print(tree)
+def read_dir(folder):
+    for root, dirs, files in os.walk(folder):
+        #print(root, dirs, files)
+                    #folder ['subfolder2', 'subfolder1'] []
+                    # folder/subfolder2 ['subfolder2-1'] ['1.txt']
+                    # folder/subfolder2/subfolder2-1 [] ['4.txt']
+                    # folder/subfolder1 [] ['3.txt', '2.txt']
+        level = root.count(os.sep)
+        indent = '! ' * 4 * level
+        print(root, files, level, indent)
+
+read_dir('folder') 
