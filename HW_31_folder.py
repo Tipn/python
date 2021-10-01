@@ -36,7 +36,20 @@ def read_dir(folder):
                     # folder/subfolder2/subfolder2-1 [] ['4.txt']
                     # folder/subfolder1 [] ['3.txt', '2.txt']
         level = root.count(os.sep)
-        indent = '! ' * 4 * level
-        print(root, files, level, indent)
+        indent = ' ' * 4 * level # для пробела между путем и папкой
+        print(f'{indent}[{os.path.basename(root)}]')
+        sub_indent = ' ' * 4 * (level + 1)
+        # print(root, files, level, indent, sub_indent)
+        for file in files:
+            print(f'{sub_indent}{file}')
+            
+                    #         [folder]
+                    # [subfolder2]
+                    #     1.txt
+                    #     [subfolder2-1]
+                    #         4.txt
+                    # [subfolder1]
+                    #     3.txt
+                    #     2.txt
 
 read_dir('folder') 
