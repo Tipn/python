@@ -1,6 +1,7 @@
 from typing import Text
 
 
+"""
 module OS
 metod walk 
 
@@ -12,4 +13,4 @@ folder
         2.Text
         3.Text
     subfolder
-metod walk 
+metod walk """
