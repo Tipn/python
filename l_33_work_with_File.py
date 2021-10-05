@@ -42,3 +42,7 @@ f = open('file.txt', 'r', encoding='utf-8') # парпметр r читает в
 for line in f:
     print (line, end='')# end='' выводит без ненужных переносов 
 f.close()
+
+# HW спарсить страничку с
+# https://www.ua-football.com/sport
+# 
