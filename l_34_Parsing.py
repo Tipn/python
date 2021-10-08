@@ -18,4 +18,11 @@ html = req.read()
 
 soup = BeautifulSoup(html, 'html.parser')
 news = soup.find_all('li', class_='liga-news-item')
-print(news)
+# print(news)
+
+results = []
+
+for item in news:
+    title = item.find('span', class_='d-block')
+    desc = None
+    href = None
