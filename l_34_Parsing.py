@@ -10,4 +10,11 @@ from bs4 import BeautifulSoup
 import urllib.request 
 
 req = urllib.request.urlopen('https://www.ua-football.com/sport')
-print(req)
+
+# print(req) # проверка все ли работает выдаст запрос 
+# print(html) # в одну строку выдаст всю страничку без переносов 
+
+html = req.read()
+
+soup =BeautifulSoup(html)
+print(soup) 
