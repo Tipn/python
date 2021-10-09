@@ -32,3 +32,10 @@ for item in news:
             'desc': desc,
             'href': href,
     })
+f =open ('news.txt', 'w', encoding='utf-8')
+i = 1
+for item in results:
+    f.write(f'Новость № {i}\n\nНазвание: {item["titel"]}\nОписание: {item["desc"]}\n\Силка:
+    {item["href"]}')
+        i += 1
+# print(results) # распечаттаь масив словарей 
