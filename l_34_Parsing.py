@@ -6,6 +6,7 @@
 # beautifulsoup4.pypl
 # https://docs.python.org/3/library/urllib.request.html - познакомится с модулем 
 # надо установиь питон по умолчанию после продолжу 
+# pythonz.net/references/named/string.strip 
 from bs4 import BeautifulSoup
 import urllib.request 
 
@@ -23,6 +24,6 @@ news = soup.find_all('li', class_='liga-news-item')
 results = []
 
 for item in news:
-    title = item.find('span', class_='d-block')
+    title = item.find('span', class_='d-block').get_text()
     desc = None
     href = None
