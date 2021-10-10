@@ -17,12 +17,23 @@ except ZeroDivisionError:   # описание при какой ошибки д
 print(num)                  # вывод без ошибки 
 print('hi')
 '''
-
+'''
 try:
     num = 100 / '2'
 except Exception:
     num = 0
 else:                   # else отрабатывает если код без ошибок 
     print('Else')
-finally:
+finally:                # finally выполняется всегда 
     print('Finally')
+'''
+
+while True:
+    try:
+        num = int(input('Enter your number: '))
+        print(f'100 / {num} = {100 / num}')
+        break
+    except ZeroDivisionError:
+        print('The number must be greater than zero')
+    except ValueError:
+        print('Must be a number')
