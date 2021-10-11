@@ -9,7 +9,12 @@ class A:
     property2 = 'Propery 2'
 
 
+    def say_hi(self):   # self является обязательнымчтоб редактор понимал на какой обект ссылться 
+        return 'Hi'
+
+
 a = A() # был создан объект<__main__.A object at 0x7f22c67d6040>
+b = A()
 # a.property1 = 'Propery 1'
 # a.property2 = 'Propery 2'
 # print(a)
