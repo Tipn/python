@@ -9,4 +9,7 @@ class A:
 
 
 a = A() # был создан объект<__main__.A object at 0x7f22c67d6040>
+a.property1 = 'Propery 1'
+a.property2 = 'Propery 2'
 print(a)
+print(a.property1)  # создал свойство
