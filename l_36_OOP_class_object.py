@@ -16,7 +16,6 @@ class A:
             return 'Hello, ' + self.name
 
 
-
 a = A() # был создан объект<__main__.A object at 0x7f22c67d6040>
 b = A()
 # a.property1 = 'Propery 1'
