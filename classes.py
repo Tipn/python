@@ -16,4 +16,8 @@ class Person:
         return self.__age
 
     def set_age(self, value):       # метод сеттер
-        self.__age = value  
+        # self.__age = value          # способ разрешить передавать значения 
+        if value in range(1, 101):
+            self.__age = value
+        else:
+            print('Wrong age')
