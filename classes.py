@@ -11,13 +11,25 @@ class Person:
     def print_info(self):               # self указывает на объект и берет свойства у конкретного объекта 
         print(f'Name: {self.name}, Age: {self.__age}')
 
-    # metod Getter setter
-    def get_age(self):
-        return self.__age
+# '''    # metod Getter setter
+#     def get_age(self):
+#         return self.__age
 
-    def set_age(self, value):       # метод сеттер
-        # self.__age = value          # способ разрешить передавать значения 
-        if value in range(1, 101):
+#     def set_age(self, value):       # метод сеттер
+#         # self.__age = value          # способ разрешить передавать значения 
+#         if value in range(1, 101):  # способ ограничить параметры ввода 
+#             self.__age = value
+#         else:
+#             print('Wrong age')
+# '''
+    @property                   # метод геттер с дикоратором
+    def age(self):
+        return self.__age
+    
+    @age.setter                 # метод сеттер 
+    def age(self, value):       #   будь внимателен!!
+        if value in range(1, 101):  # способ ограничить параметры ввода 
             self.__age = value
         else:
             print('Wrong age')
+# сначало идет Геттор после сеттор, иначе ошибка  

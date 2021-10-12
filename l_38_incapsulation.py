@@ -12,7 +12,10 @@ person1.print_info()
 person2 = Person('Katty')
 # person2._age = 30           #пример защищенной атрибута переменной и ее не желательно изменять 
 # print(person2._Perso__age)   # способ достучаться к приватному свойству
-print(person2.get_age())
-person2.set_age(110)             # как поменять значение в приватном параметре 
+# print(person2.get_age())
+# person2.set_age(110)             # как поменять значение в приватном параметре 
+
+print(person2.age)
+person2.age = 35
 person2.print_info()
 
