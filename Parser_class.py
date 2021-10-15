@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup # парсинг всегда надо настраивать 
 import urllib.request
 
 class Parser:
@@ -7,5 +7,6 @@ class Parser:
     html = ''
     resalts = []
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self, url, path):
+        self.url = url
+        self.path = path 
