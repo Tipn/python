@@ -27,7 +27,7 @@ class Parser:
                 'title': title,
                 'desc': desc,
                 'href': href,
-    
+            })
 
     def run (self):
         self.get_html()
