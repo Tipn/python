@@ -31,5 +31,7 @@ class Parser:
 
     def run (self):
         self.get_html()
+        self.parsing() # вызывает метод парсинга
+        
 
 
