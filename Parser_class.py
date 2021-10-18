@@ -28,10 +28,15 @@ class Parser:
                 'desc': desc,
                 'href': href,
             })
+    def save(self):
+        with open(self.path, 'w', encoding='utf-8') as f:
+            i = 1
+            for item in self.results:
+                f.write(f'Новость № {i}\n\nНазвание: {item["titel"]}\nОписание: {item["desc"]}\n\Силка: {item["href"]}')
+                    i += 1
+
 
     def run (self):
         self.get_html()
-        self.parsing() # вызывает метод парсинга
-        
-
-
+        self.parsing()  # вызывает метод парсинга
+        self.save()     # вызывает метод сохранения 

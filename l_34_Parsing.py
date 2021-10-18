@@ -34,8 +34,7 @@ for item in news: # ф. которая записывает данные в фа
 f =open ('news.txt', 'w', encoding='utf-8')
 i = 1
 for item in results:
-    f.write(f'Новость № {i}\n\nНазвание: {item["titel"]}\nОписание: {item["desc"]}\n\Силка:
-    {item["href"]}')
+    f.write(f'Новость № {i}\n\nНазвание: {item["titel"]}\nОписание: {item["desc"]}\n\Силка: {item["href"]}')
         i += 1
 f.close()
 # print(results) # распечаттаь масив словарей 
