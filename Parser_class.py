@@ -16,6 +16,9 @@ class Parser:
         self.raw_html = req.read()
         self.html = BeautifulSoup(self.raw_html, 'html.parser')
 
+    def parsing(self):
+        news = soup.find_all('li', class_='liga-news-items')
+
     def run (self):
         self.get_html()
 
