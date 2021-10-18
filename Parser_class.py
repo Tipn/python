@@ -14,6 +14,7 @@ class Parser:
     def get_html(self):
         req = urllib.request.urlopen(self.url)
         self.raw_html = req.read()
+        self.html = BeautifulSoup(self.raw_html, 'html.parser')
 
     def run (self):
         self.get_html()
