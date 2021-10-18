@@ -33,7 +33,7 @@ class Parser:
             i = 1
             for item in self.results:
                 f.write(f'Новость № {i}\n\nНазвание: {item["titel"]}\nОписание: {item["desc"]}\n\Силка: {item["href"]}')
-                    i += 1
+                i += 1
 
 
     def run (self):
