@@ -35,4 +35,7 @@ class Person:
 # сначало идет Геттор после сеттор, иначе ошибка  
 
 class Employee(Person):
-    pass
+    company = 'Google'
+
+    def more_info(self):
+        print(f'{self.name}, works in {self.company}')

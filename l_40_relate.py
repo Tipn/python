@@ -9,3 +9,4 @@ person.print_info()
 
 employee = Employee('Nick', 30)
 employee.print_info()
+employee.more_info()        # Nick, works in Google
