@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup # парсинг всегда надо настраивать 
+from bs4 import BeautifulSoup # парсинг всегда надо настраивать  Желательно разбивать на несколько елементов 
 import urllib.request
 
 class Parser:
