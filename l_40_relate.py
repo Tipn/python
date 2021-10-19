@@ -1,8 +1,11 @@
 # наследование  позволяет содавать новый класс на основе существующего и наследовать от родительского класса все публичные методы и свойства
 # 
-from classes import Person
+from classes import Person, Employee
 
-person1 = Person('John')
-print(person1.age)
-person1.age = 35
-person1.print_info()
+person = Person('Pavel', 30)
+print(person.age)
+person.age = 33
+person.print_info()
+
+employee = Employee('Nick', 30)
+employee.print_info()
